@@ -1,0 +1,21 @@
+<html>
+<head>
+   <title>Use of nested objects</title>
+</head>
+<body><p id="demo2"></p>
+<script>
+    var employee = {
+        Empno: 1000,
+        Empname: "Ketaki",
+
+        Dept :{
+            Deptno:15,
+            Deptname:"IT"
+
+        }
+    };
+    document.getElementById("demo2").innerHTML=(employee.Empname + " works in dept " + employee.Dept.Deptname);
+</script>
+    
+</body>
+</html>

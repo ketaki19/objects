@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Javascript objects</title>
+    </head>
+    <body>
+        <h1>Creating objects</h1>
+        <p id="demo1"></p>
+        <script>
+
+            function stud(name, age, branch) {
+      
+              this.name = name;
+      
+              this.age = age;
+      
+              this.branch = branch;
+      
+            };
+      
+            var student = new stud("Ketaki", 21, "Information Technology");
+      
+            document.getElementById("demo1").innerHTML = student.name + " of the age " + student.age + " studies " + student.branch + ".";
+      
+          </script>
+        </body>
+</html>
